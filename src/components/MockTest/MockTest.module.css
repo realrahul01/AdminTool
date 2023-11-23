@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
-    height: 30vh;
-}
+
 .adminMock{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    
+    height: 82vh;
+    /* background: red; */
+    overflow: hidden;
 }
 .rightMockTest{
     width: 70vw;
-    height: 90vh;
+    height: 85vh;
+    padding-bottom: 40px;
     margin-right: 80px;
     border-radius: 10px;
     border: 1px solid #E5E5E5;
@@ -24,31 +25,55 @@ body{
     border-radius: 10px;
     border: 1px solid #F4F4F4;
     background: #FFF;
+    max-height: 75vh;
     box-shadow: 0px 0px 4px 4px rgba(206, 232, 255, 0.25);
 }
 
-.leftBar p{
+.leftBar button{
     border-radius: 4px;
     border: 1px solid #F1F1F1;
     width: 160px;
     padding-left: 10px;
+    margin-top: 12px;
+    text-align: left;
+    background-color: #fff;
 }
-.leftBar input{
-    width: 160px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 4px;
-    border: 1px solid #77BFFF;
-    background: #FFF;
+.leftBar button:hover{
+    /* box-shadow: 0px 0px 4px 1px rgba(106, 116, 126, 0.6); */
     box-shadow: 0px 0px 4px 1px rgba(119, 191, 255, 0.60);
-    outline: none;
+    border: 1px solid #77BFFF;
 }
+
+/* .leftBar button:first-child{
+    color: #77BFFF;;
+    border: 1px solid #77BFFF;
+    box-shadow: 0px 0px 4px 1px rgba(119, 191, 255, 0.60);
+} */
+
+.val{
+    color: #77BFFF;;
+    border: 1px solid #77BFFF;
+    box-shadow: 0px 0px 4px 1px rgba(119, 191, 255, 0.60);
+}
+.dropdown{
+    border: none;
+    outline: none;
+    color: #8E8F8E;
+    cursor: pointer;
+}
+
 .leftBar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 170px;
+    margin-bottom: 10px;
+}
+.leftMockTest a{
+    margin-left: 15px;
+    color: #004CA5;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 550;
 }
 .leftMockTest h5{
     text-align: center;
@@ -80,9 +105,9 @@ body{
     background: #fff;
     height: 25px;
 }
-.nav img{
+/* .nav img{
     margin-left: 10px;
-}
+} */
 .create hr{
     width: 500px;
     margin-left: 10px;
@@ -108,7 +133,7 @@ body{
     border: none;
     outline: none;
     padding: 5px;
-    border-radius: 5px 0px;
+    border-radius: 0px 0px;
     border: 1px solid #CEE8FF;
     background: #F9F9F9;
     font-size: 14px;
@@ -120,23 +145,11 @@ body{
     border-radius: 0px 5px 5px 0px;
     background: #77BFFF;
     border: none;
-    padding: 5px 8px;
+    padding: 3.7px 8px;
 }
 .nav{
     color: #8E8F8E;
     font-family: Nunito;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
-}
-.leftMockTest a{
-    margin-left: 15px;
-    color: #004CA5;
-    font-family: Poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 550;
-    line-height: normal;
-    text-decoration-line: underline;
 }

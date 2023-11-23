@@ -1,7 +1,9 @@
 import styles from './Test.module.css'
 
 
-const Test=({x})=>{
+
+// eslint-disable-next-line react/prop-types
+const Test=({title,time,start,end,Invite,Attempts,Passed})=>{
     return(
         
             <div className={styles.card}>
@@ -9,7 +11,7 @@ const Test=({x})=>{
                 <div className={styles.nav}>
                   <div className={styles.leftNav}>
                     <img src="../../images/clarity_clock-solid.svg" alt="error" />
-                    <span>47 Minutes</span>
+                    <span> {time}</span>
                   </div>
                   <div className={styles.rightNav}>
                     <div className={styles.dot1}></div>
@@ -17,29 +19,30 @@ const Test=({x})=>{
                     <div className={styles.dot3}></div>
                   </div>
                 </div>
-              <p>Java Script Test</p>
+              <p>{title}</p>
               <div className={styles.midCard}>
                 <span>Valid</span>
-                <label>6 Nav - 6 Nav 2023</label>
+                <label>{start}-{end}</label>
                 <button>Invite</button>
               </div>
-              </div>
                            
-              <div className={styles.table1}>
-                <table>
-                  <tr>
-                    <td>Invites</td>
-                    <td>Attempts</td>
-                    <td>Passed</td>
-                  </tr>
-                  <tr className={styles.tabletr}>
-                    <td>20</td>
-                    <td>20</td>
-                    <td>10</td>
-                  </tr>
-                </table>
-                {/* <p>hello world</p> */}
-            </div>
+              <div className={styles.parent}>
+                <div>
+                   <div>Invites</div> 
+                   <div className={styles.dynamicData}>{Invite}</div> 
+                </div>
+                <div className={styles.Attempt}>
+                   <div>Attempts</div> 
+                   <div className={styles.dynamicData}>{Attempts}</div> 
+                </div>
+                <div className={styles.Passed}>
+                   <div>Passed</div> 
+                   <div className={styles.dynamicData}>{Passed}</div> 
+                </div>
+
+              </div>
+
+              </div>
           </div>
       
     )

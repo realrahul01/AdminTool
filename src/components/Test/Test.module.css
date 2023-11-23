@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     width: 275px;
-    min-height: 180px;
+    min-height: 190px;
     margin-left: 10px;
 }
 *{
@@ -40,13 +40,13 @@
 .midCard label{
     color: #004CA5;
     font-family: Poppins;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     margin-left: 10px;
 }
 
 .midCard button{
-    padding: 2px 12px;
+    padding: 3px 13px;
     color: #FFF;
     font-family: Poppins;
     font-size: 11px;
@@ -71,17 +71,17 @@
     font-size: 11px;
     font-weight: 600;
 }
-.table1 table{
+/* .table1 table{
     width: 110%;
     color: #000;
     font-family: Poppins;
     font-size: 10px;
     font-weight: 600;
     text-align: center;
-}
-.tabletr{   
+} */
+/* .tabletr{   
     color: #004CA5;
-}
+} */
 
 .rightNav{
     margin-right: 10px;
@@ -105,4 +105,23 @@
     width: 5px;
     height: 5px;
     border-radius: 5px;
+}
+.parent{
+    display: flex;
+    /* justify-content: space-between; */
+    text-align: center;
+    color: #000;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.Attempt{
+    margin-left: 50px;
+}
+.Passed{
+    margin-left: 50px;
+}
+.dynamicData{
+    color: #004CA5;
 }
