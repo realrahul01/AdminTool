@@ -1,9 +1,24 @@
 /* eslint-disable no-unused-vars */
+// import Modals from "../Modals/Modals";
+import Modals from "../Modals/Modals";
 import Test from "../Test/Test";
 import styles from "./Mocktest.module.css";
 import { useState } from "react";
 
 const MockTest = () => {
+
+  const[close,setClose] = useState(false)
+
+
+  const handleClickClose = ()=> {
+    console.log(close)
+    setClose(false)
+  }
+  const handleClickOpen = ()=> {
+    console.log(close)
+    setClose(true)
+  }
+
 
     const data = [
         {
@@ -54,6 +69,7 @@ const [btn,setBtn] = useState(['btn1','btn2','btn3','btn4','btn4','btn5'])
           Invite={x.Invite}
           Attempts={x.Attempts}
           Passed={x.Passed}
+          handleClickOpen={handleClickOpen}
         />
       </div>
     );
@@ -62,12 +78,12 @@ const [btn,setBtn] = useState(['btn1','btn2','btn3','btn4','btn4','btn5'])
 
 //   button array
   const clickHandler = (index) => {
-    // console.log(index)
     setIsActive(index)
   };
 
   return (
     <div className={styles.adminMock}>
+      {close && <Modals handleClickClose={handleClickClose}/>}  
       <div className={styles.leftMockTest}>
         <h5>Dashboad</h5>
         <div className={styles.leftBar}>
@@ -87,6 +103,8 @@ const [btn,setBtn] = useState(['btn1','btn2','btn3','btn4','btn4','btn5'])
       </div>
       <div className={styles.rightMockTest}>
         <div className={styles.navbar}>
+          <div>
+          </div>
           <div className={styles.leftNavbar}>
             Filter By :-
             <div className={styles.nav}>
@@ -124,6 +142,7 @@ const [btn,setBtn] = useState(['btn1','btn2','btn3','btn4','btn4','btn5'])
             </button>
           </div>
         </div>
+        
         <div className={styles.create}>
           <h5>Created</h5>
           <hr />

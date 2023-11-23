@@ -13,6 +13,8 @@
     width: 275px;
     min-height: 190px;
     margin-left: 10px;
+    position: absolute;
+    z-index: 1000;
 }
 *{
     box-sizing: border-box;
@@ -124,4 +126,34 @@
 }
 .dynamicData{
     color: #004CA5;
+}
+.ImgOpt{
+    border: 1px solid #EAEAEA;
+    width: 90px;
+    height: 125px;
+    background-color: #fff;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+    position: relative;
+    right: 50px;
+    z-index: 2;
+    border-radius: 10px;
+    /* color: #000; */
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cardOpt{
+    margin: 6px;
+}
+.cardOpt div{
+    margin-top: 4px;
+    cursor: pointer;
+}
+.cardOpt label{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.cardOpt div:hover{
+    box-shadow: 0px 0px 4px 1px rgba(119, 191, 255, 0.60);
 }
